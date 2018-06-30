@@ -100,7 +100,7 @@ def feat_extract(sent):
 	#print(temp)
 	df = pd.DataFrame([temp])
 	test = np.asarray(df)
-	loaded_model = pickle.load(open('finalized_model.sav', 'rb'))
+	loaded_model = pickle.load(open('finalized_model.sav', 'rb'))#the model created by SVM learning process, only model file loaded here for prediction
 	prediction_svm = loaded_model.predict(test)
 	print(prediction_svm[0])
 	return

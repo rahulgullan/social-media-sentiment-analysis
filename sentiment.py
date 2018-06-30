@@ -1,5 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf_8 -*-
+
+
 from flask import Flask, render_template, flash, request, redirect, url_for
 from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
 import os
@@ -26,6 +28,7 @@ class ReusableForm(Form):
 
 @app.route("/", methods=['GET', 'POST'])
 def hello():
+	#receiving sentence from webpage here.
 	flag=0
 	form = ReusableForm(request.form)
 	
@@ -108,6 +111,7 @@ def tagging(sent):
 	words=re.sub(' +', ' ',sent).replace('.','').replace(',','').strip().split()
 	counter=0
 	neghandle=[]
+	#determine whether each word is pos, neg or int using dictionaries
 	for w in words:
 		temp=u''
 		if (w+'\n'.decode('utf-8') in pos_lex) and  (w+'\n'.decode('utf-8') in intensifier):
