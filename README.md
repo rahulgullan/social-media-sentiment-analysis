@@ -12,8 +12,7 @@ pip install sklearn
 pip install pandas  
 pip install numpy  
 
-## Open Terminal and type following commands to create a Virtual Environment
-Copy all files and folders inside /bin folder
+###Copy all files and folders inside flask-application/flask-env/bin folder
 
 ## How to run program
 open terminal
