@@ -12,11 +12,12 @@ pip install sklearn
 pip install pandas  
 pip install numpy  
 
-###Copy all files and folders inside flask-application/flask-env/bin folder
+### Copy all files and folders inside flask-application/flask-env/bin folder
 
 ## How to run program
-open terminal
-cd flask-application
-source flask-env/bin/activate
-cd flask-env/bin
-python sentiment.py
+open terminal  
+cd flask-application  
+source flask-env/bin/activate  
+cd flask-env/bin  
+python sentiment.py  
+open url in the browser
