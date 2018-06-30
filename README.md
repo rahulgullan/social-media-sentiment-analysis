@@ -12,7 +12,7 @@ pip install sklearn
 pip install pandas  
 pip install numpy  
 
-### Copy all files and folders inside flask-application/flask-env/bin folder
+Copy all files and folders inside flask-application/flask-env/bin folder  
 
 ## How to run program
 open terminal  
